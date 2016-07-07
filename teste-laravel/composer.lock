@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c284a9c122da36c99a8b6597bdce7aa6",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "a08232c8fbd4f62b20bb21e6ef9e62db",
+    "content-hash": "3564fe59955bb1166766fc7b22545cd3",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -160,6 +160,67 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "dollar/generators",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wdollar/Laravel-4-Generators-Bootstrap-3.git",
+                "reference": "0074345ba3b70a12123f89af1bfd23bdba335d42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wdollar/Laravel-4-Generators-Bootstrap-3/zipball/0074345ba3b70a12123f89af1bfd23bdba335d42",
+                "reference": "0074345ba3b70a12123f89af1bfd23bdba335d42",
+                "shasum": ""
+            },
+            "require": {
+                "mustache/mustache": "2.4.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/console": "~4",
+                "illuminate/filesystem": "~4",
+                "illuminate/support": "~4",
+                "mockery/mockery": "0.8.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Dollar\\Generators": "src/"
+                },
+                "classmap": [
+                    "src/Dollar/Generators/Generators"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Wes Dollar",
+                    "email": "github@wesdollar.com",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@jeffrey-way.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel 4 Generators w/ Bootstrap 3",
+            "keywords": [
+                "artisan",
+                "bootstrap",
+                "generators",
+                "laravel",
+                "scaffold"
+            ],
+            "time": "2015-02-23 21:03:30"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -639,6 +700,51 @@
                 "schedule"
             ],
             "time": "2016-01-26 21:23:30"
+        },
+        {
+            "name": "mustache/mustache",
+            "version": "v2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "14bc3b4f6a4770b535fc433bfd0435471ed386c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/14bc3b4f6a4770b535fc433bfd0435471ed386c6",
+                "reference": "14bc3b4f6a4770b535fc433bfd0435471ed386c6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "time": "2013-08-13 04:49:23"
         },
         {
             "name": "nesbot/carbon",
@@ -3153,7 +3259,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "dollar/generators": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
