@@ -6,12 +6,34 @@
  * Date: 07/07/16
  * Time: 03:16
  */
+
+/**
+ * @Entity
+ * @Table(name=livro)
+*/
 class Livro
 {
     //Atributos
+    /**
+     * @Id
+     * @GeneratedValue(strategy="AUTO")
+     * @Column(type="integer")
+    */
     private $id;
+
+    /**
+     * @Column(type=string)
+     */
     private $nome;
+
+    /**
+     * @Column(type=string)
+     */
     private $autor;
+
+    /**
+     * @Column(type=string)
+     */
     private $status;
 
     /**
