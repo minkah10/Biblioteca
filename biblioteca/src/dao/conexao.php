@@ -5,7 +5,7 @@
  * Date: 07/07/16
  * Time: 04:37
  */
-error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
+//error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
 define('DB_SEVER', 'localhost:8000');
 define('DB_NAME', 'biblioteca');
 define('DB_USERNAME', 'root');
